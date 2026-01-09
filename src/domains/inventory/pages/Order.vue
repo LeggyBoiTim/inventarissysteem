@@ -1,8 +1,8 @@
 <script setup>
 import Inventory from '../components/Inventory.vue';
-import { getInventory, getItemIndexById } from '../store';
+import { getOrderInventory, getItemIndexById } from '../store';
 
-const inventory = getInventory;
+const inventory = getOrderInventory;
 
 const readInput = (id, value) => {
     inventory.value[getItemIndexById(id).value].amount = value;
@@ -11,7 +11,7 @@ const readInput = (id, value) => {
 
 <template>
     <nav>
-        <RouterLink to="/order">Naar Bestellijst</RouterLink>
+        <RouterLink to="/overview">Terug Naar Overzicht</RouterLink>
     </nav>
     <br>
     <Inventory :inventory="inventory" @input="readInput"/>

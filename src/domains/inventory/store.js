@@ -11,11 +11,12 @@ const inventory = ref([
     { id: 7, name: 'IJsthee', actualAmount: 16, minimumAmount: 50 },
     { id: 8, name: 'Melk', actualAmount: 91, minimumAmount: 50 },
     { id: 9, name: 'Sinaasappelsap', actualAmount: 8, minimumAmount: 30 },
-    { id: 10, name: 'Wijn', actualAmount: 54, minimumAmount: 30 },
+    { id: 10, name: 'Wijn', actualAmount: 14, minimumAmount: 30 },
 ]);
 
 // Getters
 export const getInventory = computed(() => inventory.value);
+export const getOrderInventory = computed(() => inventory.value.filter((item) => item.actualAmount < item.minimumAmount));
 export const getItemById = (id) => computed(() => inventory.value.find(item => item.id == id));
 export const getItemIndexById = (id) => computed(() => inventory.value.indexOf(getItemById(id).value));
 
