@@ -24,7 +24,7 @@
         <mxCell id="sx2PrEnrOOde-N0LosvJ-37" edge="1" parent="1" source="sx2PrEnrOOde-N0LosvJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sx2PrEnrOOde-N0LosvJ-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sx2PrEnrOOde-N0LosvJ-4" parent="1" style="shape=label;html=1;strokeWidth=2;whiteSpace=wrap;rounded=1;arcSize=14;size=0.23;fontSize=16;absoluteArcSize=1;" value="InventoryTable" vertex="1">
+        <mxCell id="sx2PrEnrOOde-N0LosvJ-4" parent="1" style="shape=label;html=1;strokeWidth=2;whiteSpace=wrap;rounded=1;arcSize=14;size=0.23;fontSize=16;absoluteArcSize=1;" value="Inventory" vertex="1">
           <mxGeometry height="60" width="120" x="280" y="280" as="geometry" />
         </mxCell>
         <mxCell id="sx2PrEnrOOde-N0LosvJ-16" edge="1" parent="1" source="sx2PrEnrOOde-N0LosvJ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="sx2PrEnrOOde-N0LosvJ-4">
@@ -57,9 +57,6 @@
         <mxCell id="sx2PrEnrOOde-N0LosvJ-41" edge="1" parent="1" source="sx2PrEnrOOde-N0LosvJ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="sx2PrEnrOOde-N0LosvJ-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sx2PrEnrOOde-N0LosvJ-42" edge="1" parent="1" source="sx2PrEnrOOde-N0LosvJ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sx2PrEnrOOde-N0LosvJ-38">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="sx2PrEnrOOde-N0LosvJ-13" parent="1" style="shape=label;html=1;strokeWidth=2;whiteSpace=wrap;rounded=1;arcSize=14;size=0.23;fontSize=16;absoluteArcSize=1;" value="Order" vertex="1">
           <mxGeometry height="60" width="120" x="360" y="440" as="geometry" />
         </mxCell>
@@ -68,7 +65,7 @@
             <mxPoint x="580" y="500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sx2PrEnrOOde-N0LosvJ-22" parent="1" style="shape=label;whiteSpace=wrap;html=1;dx=130;dy=20;rounded=1;arcSize=14;strokeWidth=2;align=left;fontSize=16;absoluteArcSize=1;" value="Getters&lt;div&gt;- getInventory()&lt;/div&gt;&lt;div&gt;- getItemById(id)&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- getItemIndexById(id)&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="sx2PrEnrOOde-N0LosvJ-22" parent="1" style="shape=label;whiteSpace=wrap;html=1;dx=130;dy=20;rounded=1;arcSize=14;strokeWidth=2;align=left;fontSize=16;absoluteArcSize=1;" value="Getters&lt;div&gt;- getInventory()&lt;/div&gt;&lt;div&gt;- getOrderInventory()&lt;/div&gt;&lt;div&gt;- getItemById(id)&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- getItemIndexById(id)&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="200" x="600" y="640" as="geometry" />
         </mxCell>
         <mxCell id="sx2PrEnrOOde-N0LosvJ-49" edge="1" parent="1" source="sx2PrEnrOOde-N0LosvJ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="sx2PrEnrOOde-N0LosvJ-44">
@@ -91,7 +88,7 @@
         <mxCell id="sx2PrEnrOOde-N0LosvJ-33" edge="1" parent="1" source="sx2PrEnrOOde-N0LosvJ-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="sx2PrEnrOOde-N0LosvJ-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sx2PrEnrOOde-N0LosvJ-28" parent="1" style="shape=label;html=1;strokeWidth=2;whiteSpace=wrap;rounded=1;arcSize=14;size=0.23;fontSize=16;absoluteArcSize=1;" value="InventoryForm" vertex="1">
+        <mxCell id="sx2PrEnrOOde-N0LosvJ-28" parent="1" style="shape=label;html=1;strokeWidth=2;whiteSpace=wrap;rounded=1;arcSize=14;size=0.23;fontSize=16;absoluteArcSize=1;" value="ItemForm" vertex="1">
           <mxGeometry height="60" width="120" x="120" y="600" as="geometry" />
         </mxCell>
         <mxCell id="sx2PrEnrOOde-N0LosvJ-34" edge="1" parent="1" source="XmOBm5THMtL1oGxsZINo-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sx2PrEnrOOde-N0LosvJ-35" value="">
@@ -102,12 +99,6 @@
         </mxCell>
         <mxCell id="sx2PrEnrOOde-N0LosvJ-35" parent="1" style="shape=label;html=1;strokeWidth=2;whiteSpace=wrap;rounded=1;arcSize=14;size=0.23;fontSize=16;absoluteArcSize=1;" value="Overview" vertex="1">
           <mxGeometry height="60" width="120" x="280" y="160" as="geometry" />
-        </mxCell>
-        <mxCell id="sx2PrEnrOOde-N0LosvJ-43" edge="1" parent="1" source="sx2PrEnrOOde-N0LosvJ-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" target="sx2PrEnrOOde-N0LosvJ-13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="sx2PrEnrOOde-N0LosvJ-38" parent="1" style="shape=label;html=1;strokeWidth=2;whiteSpace=wrap;rounded=1;arcSize=14;size=0.23;fontSize=16;absoluteArcSize=1;" value="OrderForm" vertex="1">
-          <mxGeometry height="60" width="120" x="360" y="600" as="geometry" />
         </mxCell>
         <mxCell id="sx2PrEnrOOde-N0LosvJ-54" edge="1" parent="1" source="sx2PrEnrOOde-N0LosvJ-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;dashed=1;" target="sx2PrEnrOOde-N0LosvJ-13">
           <mxGeometry relative="1" as="geometry">
