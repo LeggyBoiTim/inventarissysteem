@@ -5,7 +5,7 @@ import { getInventory, getItemIndexById } from '../store';
 const inventory = getInventory;
 
 const readInput = (id, value) => {
-    inventory.value[getItemIndexById(id).value].amount = value;
+    inventory.value[getItemIndexById(id).value].actualAmount = value;
 }
 </script>
 
