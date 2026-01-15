@@ -1,11 +1,12 @@
-<script setup>
-import Inventory from '../components/Inventory.vue';
+<script setup lang="ts">
+import InventoryTable from '../components/InventoryTable.vue';
 import { getInventory, getItemIndexById } from '../store';
+import type { Item } from '../store';
 
 const inventory = getInventory;
 
-const readInput = (id, value) => {
-    inventory.value[getItemIndexById(id).value].actualAmount = value;
+const readInput = (id: number, value: number) => {
+    (inventory.value[getItemIndexById(id).value] as Item).actualAmount = value;
 }
 </script>
 
@@ -14,7 +15,7 @@ const readInput = (id, value) => {
         <RouterLink to="/order">Naar Bestellijst</RouterLink>
     </nav>
     <br>
-    <Inventory :inventory="inventory" @input="readInput"/>
+    <InventoryTable :inventory="inventory" @input="readInput"/>
 </template>
 
 <style scoped>

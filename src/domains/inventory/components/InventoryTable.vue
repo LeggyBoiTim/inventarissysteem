@@ -1,16 +1,17 @@
-<script setup>
+<script setup lang="ts">
 import { removeItem } from '../store';
+import type { Inventory } from '../store';
 
 const props = defineProps({
     inventory: {
-        type: Array,
+        type: Array as () => Inventory,
         required: true
     }
 });
 
-const emit = defineEmits(['input']);
+const emit = defineEmits<{input: [id: number, value: number]}>();
 
-const handleInput = (event) => {
+const handleInput = (event: any) => {
     emit('input', event.target.id, event.target.value);
 };
 </script>
@@ -28,7 +29,7 @@ const handleInput = (event) => {
         <tbody>
             <tr v-for="(item) in props.inventory" :key="item.id">
                 <td>{{ item.name }}</td>
-                <td><input @input="handleInput" :id="item.id" type="number" min="0" step="1" :value="item.actualAmount"></td>
+                <td><input @input="handleInput" :id="(item.id as unknown as string)" type="number" min="0" step="1" :value="item.actualAmount"></td>
                 <td>{{ item.minimumAmount }}</td>
                 <td><RouterLink :to="'/edit/' + item.id">Bewerk</RouterLink></td>
                 <td><a @click="removeItem(item)">Verwijder</a></td>

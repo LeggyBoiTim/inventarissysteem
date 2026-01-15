@@ -1,25 +1,26 @@
-<script setup>
+<script setup lang="ts">
 import { useRouter } from 'vue-router';
+import type { Item } from '../store';
 
 const router = useRouter();
 
 const props = defineProps({
     item: {
-        type: Object,
+        type: Object as () => Item,
         required: true
     }
 });
 
 const item = props.item;
 
-const emit = defineEmits(['submit']);
+const emit = defineEmits<{submit: [item: any]}>();
 
-const handleSubmit = (event) => {
+const handleSubmit = (event: Event) => {
     const item = {
-        id: event.target.id.value,
-        name: event.target.name.value,
-        actualAmount: event.target.actualAmount.value,
-        minimumAmount: event.target.minimumAmount.value
+        id: (event.target as HTMLInputElement).id.value,
+        name: (event.target as HTMLInputElement).name.value,
+        actualAmount: (event.target as HTMLInputElement).actualAmount.value,
+        minimumAmount: (event.target as HTMLInputElement).minimumAmount.value
     };
     emit('submit', item);
     router.push('/overview');
